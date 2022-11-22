@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pilas;
-
+import java.util.Stack;
 import java.util.ArrayList;
 
 /**
@@ -20,7 +20,7 @@ public class ADT<T> {
     }
 
     public boolean isEmpty() {
-        return datos == null;
+        return datos==null;
     }
 
     public int getLength() {
@@ -38,7 +38,7 @@ public class ADT<T> {
         if (isEmpty() == true) {
             System.out.println("Error, la pila esta vacia");
         } else {
-            consulta = datos.get(tope - 1);
+            consulta = datos.get(tope-1);
         }
         return consulta;
     }
